@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({
       <h1 className="text-3xl font-bold text-white mb-2 bg-gradient-to-r from-primary-accent to-secondary-accent bg-clip-text text-transparent">
         Personalize Your Experience
       </h1>
-      <p className="text-light-gray mb-6">Configure how Gov AI Agent works for you</p>
+      <p className="text-light-gray mb-6">Configure how GovPal works for you</p>
       
       {/* Search bar */}
       <div className="relative mb-6">

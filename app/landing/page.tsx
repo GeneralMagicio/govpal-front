@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-primary-bg text-white">
       <Head>
-        <title>Gov AI Agent - Your DAO Governance Companion</title>
+        <title>GovPal - Your DAO Governance Companion</title>
         <meta name="description" content="Your AI assistant for tracking, understanding, and acting on DAO proposals across platforms." />
         <link rel="icon" href="/favicon.ico" />
       </Head>

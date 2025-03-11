@@ -69,7 +69,7 @@ export default function Footer() {
                   </linearGradient>
                 </defs>
               </svg>
-              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-accent to-secondary-accent">Gov AI Agent</span>
+              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-accent to-secondary-accent">GovPal</span>
             </div>
             <p className="text-light-gray">Empowering DAO governance with intelligent, personalized tools.</p>
             
@@ -148,7 +148,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-light-gray mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Gov AI Agent. All rights reserved.
+              &copy; {new Date().getFullYear()} GovPal. All rights reserved.
             </div>
             <div className="flex space-x-6">
               <Link href="#" className="text-light-gray hover:text-white text-sm transition-colors duration-300">

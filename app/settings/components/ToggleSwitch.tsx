@@ -3,13 +3,16 @@ interface ToggleSwitchProps {
   onChange: (enabled: boolean) => void;
 }
 
+// ${enabled ? 'bg-purple-900' : 'bg-gray-400'}`}
+
+
 const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ enabled, onChange }) => {
   return (
     <button
       type="button"
       onClick={() => onChange(!enabled)}
       className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 focus:outline-none
-        ${enabled ? 'bg-secondary-accent' : 'bg-secondary-bg'}`}
+        ${enabled ? 'bg-primary-bg' : 'bg-gray-400'}`}
     >
       <span
         className={`${

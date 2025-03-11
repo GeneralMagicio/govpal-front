@@ -54,8 +54,8 @@ const Settings = () => {
   return (
     <div className="min-h-screen bg-primary-bg text-white bg-grid-pattern bg-[length:50px_50px] relative overflow-x-hidden">
       <Head>
-        <title>Settings | Gov AI Agent</title>
-        <meta name="description" content="Configure your Gov AI Agent settings" />
+        <title>Settings | GovPal</title>
+        <meta name="description" content="Configure your GovPal settings" />
       </Head>
 
       {/* Background particles/stars effect */}

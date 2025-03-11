@@ -22,7 +22,7 @@ export default function Navbar() {
               </linearGradient>
             </defs>
           </svg>
-          <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-accent to-secondary-accent">Gov AI Agent</span>
+          <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-accent to-secondary-accent">GovPal</span>
         </Link>
 
         <div className="hidden md:flex items-center space-x-8">
