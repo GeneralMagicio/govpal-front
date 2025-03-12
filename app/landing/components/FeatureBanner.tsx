@@ -16,7 +16,7 @@ export default function FeatureBanner() {
           <span className="font-medium">NEW: AI Personal Notifications Now Available!</span>
         </div>
         <motion.a 
-          href="#" 
+          href="/settings" 
           className="text-primary-accent flex items-center hover:text-highlights transition-colors duration-300"
           whileHover={{ x: 3 }}
         >
