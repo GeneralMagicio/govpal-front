@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import ToggleSwitch from './ToggleSwitch';
 import Slider from './Slider';
+import TopicPicker from './TopicPicker';
 
 interface NotificationPanelProps {
   onSettingsChange: () => void;
@@ -10,7 +11,7 @@ interface NotificationPanelProps {
 
 const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange }) => {
   const [learningMode, setLearningMode] = useState<number>(65);
-  const [topics, setTopics] = useState<string[]>(['Governance Proposals', 'Treasury Updates', 'Voting Reminders']);
+  // const [topics, setTopics] = useState<string[]>(['Governance Proposals', 'Treasury Updates', 'Voting Reminders']);
   const [priorityThreshold, setPriorityThreshold] = useState<number>(3);
   const [notificationFrequency, setNotificationFrequency] = useState<string>('daily');
   
@@ -57,7 +58,7 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
             
             <div>
               <label className="block mb-2 font-medium">Topics of Interest</label>
-              <div className="flex flex-wrap gap-2 mb-2">
+              {/* <div className="flex flex-wrap gap-2 mb-2">
                 {topics.map((topic) => (
                   <span key={topic} className="inline-flex items-center px-3 py-1 rounded-lg text-sm bg-primary-accent/20 text-primary-accent">
                     {topic}
@@ -72,7 +73,8 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
                     </button>
                   </span>
                 ))}
-              </div>
+              </div> */}
+              <TopicPicker/>
             </div>
             
             <div>
