@@ -102,9 +102,11 @@ export default function KeyFeatures() {
                   </div>
                   <p className="text-light-gray">{feature.description}</p>
                   {feature.highlighted && (
-                    <button className="px-4 py-2 mt-4 text-white transition-all duration-300 rounded bg-gradient-to-r from-primary-accent to-secondary-accent shadow-glow-sm hover:shadow-glow">
-                      Try Now
-                    </button>
+                    <a href='/settings'>
+                      <button className="px-4 py-2 mt-4 text-white transition-all duration-300 rounded bg-gradient-to-r from-primary-accent to-secondary-accent shadow-glow-sm hover:shadow-glow">
+                        Try Now
+                      </button>
+                    </a>
                   )}
                 </div>
               </div>
