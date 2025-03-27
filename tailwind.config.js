@@ -14,7 +14,7 @@ module.exports = {
         'primary-bg': '#0A1929',
         'secondary-bg': '#172554',
         'cards-bg': '#1E293B',
-        'primary-accent': '#3B82F6',
+        'primary-accent': '#0077BE',
         'secondary-accent': '#8B5CF6',
         'highlights': '#2DD4BF',
         'alerts': '#F56565',

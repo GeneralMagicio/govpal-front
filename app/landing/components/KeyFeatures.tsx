@@ -51,8 +51,8 @@ const features = [
   },
   {
     id: 4,
-    title: "Task Management Integration",
-    description: "Turn governance actions into Trello tasks with smart deadlines and reminders.",
+    title: "Financial Dashboard",
+    description: "This dashboard provides a comprehensive view of all financial metrics related to ENS, including revenue, expenses, treasury holdings, allocation breakdowns, and service provider streams.",
     icon: (
       <svg className="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -67,19 +67,19 @@ const features = [
 export default function KeyFeatures() {
   return (
     <section id="features" className="py-20">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="px-6 mx-auto max-w-7xl md:px-12">
         <motion.div 
-          className="text-center mb-16"
+          className="mb-16 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Your DAO Governance Companion</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary-accent to-secondary-accent mx-auto"></div>
+          <h2 className="mb-4 text-3xl font-bold md:text-4xl">Your DAO Governance Companion</h2>
+          <div className="w-20 h-1 mx-auto bg-gradient-to-r from-primary-accent to-secondary-accent"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid gap-8 md:grid-cols-2">
           {features.map((feature, index) => (
             <motion.div 
               key={feature.id}
@@ -95,14 +95,14 @@ export default function KeyFeatures() {
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center mb-2">
-                    <h3 className="font-bold text-xl">{feature.title}</h3>
+                    <h3 className="text-xl font-bold">{feature.title}</h3>
                     <div className={`ml-3 text-xs px-2 py-1 rounded-full ${feature.highlighted ? 'bg-highlights/20 text-highlights' : 'bg-light-gray/20 text-light-gray'}`}>
                       {feature.status}
                     </div>
                   </div>
                   <p className="text-light-gray">{feature.description}</p>
                   {feature.highlighted && (
-                    <button className="mt-4 bg-gradient-to-r from-primary-accent to-secondary-accent text-white px-4 py-2 rounded shadow-glow-sm hover:shadow-glow transition-all duration-300">
+                    <button className="px-4 py-2 mt-4 text-white transition-all duration-300 rounded bg-gradient-to-r from-primary-accent to-secondary-accent shadow-glow-sm hover:shadow-glow">
                       Try Now
                     </button>
                   )}

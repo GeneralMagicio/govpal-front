@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const productLinks = [
   { name: "Features", href: "#features" },
-  { name: "Pricing", href: "#" },
+  // { name: "Pricing", href: "#" },
   { name: "Roadmap", href: "#" },
 ];
 
@@ -54,8 +54,8 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="bg-cards-bg border-t border-white/10 bg-grid-pattern bg-[length:30px_30px]">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div className="px-6 pt-16 pb-8 mx-auto max-w-7xl md:px-12">
+        <div className="grid grid-cols-1 gap-12 mb-16 md:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,16 +69,16 @@ export default function Footer() {
                   </linearGradient>
                 </defs>
               </svg>
-              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-accent to-secondary-accent">GovPal</span>
+              <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-accent to-secondary-accent">GovPal</span>
             </div>
             <p className="text-light-gray">Empowering DAO governance with intelligent, personalized tools.</p>
             
-            <div className="flex space-x-4 pt-2">
+            <div className="flex pt-2 space-x-4">
               {socialLinks.map((link) => (
                 <a 
                   key={link.name}
                   href={link.href}
-                  className="text-light-gray hover:text-primary-accent transition-colors duration-300 p-2"
+                  className="p-2 transition-colors duration-300 text-light-gray hover:text-primary-accent"
                   title={link.name}
                 >
                   <motion.div whileHover={{ y: -3 }}>
@@ -90,11 +90,11 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Product</h3>
+            <h3 className="mb-4 text-lg font-semibold">Product</h3>
             <ul className="space-y-3">
               {productLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-light-gray hover:text-white transition-colors duration-300">
+                  <Link href={link.href} className="transition-colors duration-300 text-light-gray hover:text-white">
                     {link.name}
                   </Link>
                 </li>
@@ -103,11 +103,11 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
+            <h3 className="mb-4 text-lg font-semibold">Resources</h3>
             <ul className="space-y-3">
               {resourceLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-light-gray hover:text-white transition-colors duration-300">
+                  <Link href={link.href} className="transition-colors duration-300 text-light-gray hover:text-white">
                     {link.name}
                   </Link>
                 </li>
@@ -116,11 +116,11 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="mb-4 text-lg font-semibold">ENS GovPal</h3>
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-light-gray hover:text-white transition-colors duration-300">
+                  <Link href={link.href} className="transition-colors duration-300 text-light-gray hover:text-white">
                     {link.name}
                   </Link>
                 </li>
@@ -130,40 +130,40 @@ export default function Footer() {
         </div>
         
         {/* Newsletter signup */}
-        <div className="mb-10 p-6 bg-secondary-bg/50 rounded-lg border border-white/10">
-          <h3 className="text-lg font-semibold mb-2">Stay updated</h3>
-          <p className="text-light-gray mb-4">Subscribe to our newsletter for the latest features and updates.</p>
-          <div className="flex flex-col sm:flex-row gap-3">
+        <div className="p-6 mb-10 border rounded-lg bg-secondary-bg/50 border-white/10">
+          <h3 className="mb-2 text-lg font-semibold">Stay updated</h3>
+          <p className="mb-4 text-light-gray">Subscribe to our newsletter for the latest features and updates.</p>
+          <div className="flex flex-col gap-3 sm:flex-row">
             <input 
               type="email" 
               placeholder="Enter your email" 
-              className="flex-1 px-4 py-2 rounded-md bg-cards-bg border border-white/10 focus:border-primary-accent focus:outline-none focus:shadow-glow transition-all duration-300"
+              className="flex-1 px-4 py-2 transition-all duration-300 border rounded-md bg-cards-bg border-white/10 focus:border-primary-accent focus:outline-none focus:shadow-glow"
             />
-            <button className="bg-gradient-to-r from-primary-accent to-secondary-accent text-white px-6 py-2 rounded-md shadow-glow-sm hover:shadow-glow transition-all duration-300">
+            <button className="px-6 py-2 text-white transition-all duration-300 rounded-md bg-gradient-to-r from-primary-accent to-secondary-accent shadow-glow-sm hover:shadow-glow">
               Subscribe
             </button>
           </div>
         </div>
         
         <div className="pt-8 border-t border-white/10">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-light-gray mb-4 md:mb-0">
+          <div className="flex flex-col items-center justify-between md:flex-row">
+            <div className="mb-4 text-light-gray md:mb-0">
               &copy; {new Date().getFullYear()} GovPal. All rights reserved.
             </div>
             <div className="flex space-x-6">
-              <Link href="#" className="text-light-gray hover:text-white text-sm transition-colors duration-300">
+              <Link href="#" className="text-sm transition-colors duration-300 text-light-gray hover:text-white">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-light-gray hover:text-white text-sm transition-colors duration-300">
+              <Link href="#" className="text-sm transition-colors duration-300 text-light-gray hover:text-white">
                 Terms of Service
               </Link>
-              <Link href="#" className="text-light-gray hover:text-white text-sm transition-colors duration-300">
+              <Link href="#" className="text-sm transition-colors duration-300 text-light-gray hover:text-white">
                 Cookie Policy
               </Link>
             </div>
           </div>
           
-          <div className="text-center text-light-gray mt-6 text-sm">
+          <div className="mt-6 text-sm text-center text-light-gray">
             Built with ❤️ for the DAO ecosystem
           </div>
         </div>

@@ -30,13 +30,13 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
   };
 
   return (
-    <div className="bg-cards-bg rounded-xl p-6 shadow-glow-sm transition-all duration-300 hover:shadow-glow">
-      <h2 className="text-2xl font-bold mb-6">Notification Preferences</h2>
+    <div className="p-6 transition-all duration-300 bg-cards-bg rounded-xl shadow-glow-sm hover:shadow-glow">
+      <h2 className="mb-6 text-2xl font-bold">Notification Preferences</h2>
       
       <div className="space-y-8">
         {/* AI Notification preferences */}
         <section>
-          <h3 className="text-xl font-semibold mb-4 text-primary-accent">AI Notification Preferences</h3>
+          <h3 className="mb-4 text-xl font-semibold text-primary-accent">AI Notification Preferences</h3>
           
           <div className="space-y-6">
             <div>
@@ -60,7 +60,7 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
               <label className="block mb-2 font-medium">Topics of Interest</label>
               {/* <div className="flex flex-wrap gap-2 mb-2">
                 {topics.map((topic) => (
-                  <span key={topic} className="inline-flex items-center px-3 py-1 rounded-lg text-sm bg-primary-accent/20 text-primary-accent">
+                  <span key={topic} className="inline-flex items-center px-3 py-1 text-sm rounded-lg bg-primary-accent/20 text-primary-accent">
                     {topic}
                     <button 
                       onClick={() => {
@@ -98,7 +98,7 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
             <div>
               <label className="block mb-2 font-medium">Notification Frequency</label>
               <select 
-                className="w-full md:w-64 px-4 py-2 bg-secondary-bg rounded-lg border border-secondary-bg/50 focus:outline-none focus:ring-2 focus:ring-primary-accent"
+                className="w-full px-4 py-2 border rounded-lg md:w-64 bg-secondary-bg border-secondary-bg/50 focus:outline-none focus:ring-2 focus:ring-primary-accent"
                 value={notificationFrequency}
                 onChange={(e) => { 
                   setNotificationFrequency(e.target.value); 
@@ -116,7 +116,7 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
         
         {/* Notification Channels */}
         <section>
-          <h3 className="text-xl font-semibold mb-4 text-primary-accent">Notification Channels</h3>
+          <h3 className="mb-4 text-xl font-semibold text-primary-accent">Notification Channels</h3>
           
           <div className="space-y-4">
             <div className="flex items-center justify-between">
@@ -142,10 +142,10 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
             </div>
             
             {emailNotifications && (
-              <div className="ml-6 mt-2">
+              <div className="mt-2 ml-6">
                 <label className="block mb-2 text-sm font-medium">Email Frequency</label>
                 <select 
-                  className="w-full sm:w-64 px-4 py-2 bg-secondary-bg rounded-lg border border-secondary-bg/50"
+                  className="w-full px-4 py-2 border rounded-lg sm:w-64 bg-secondary-bg border-secondary-bg/50"
                   value={emailFrequency}
                   onChange={(e) => { 
                     setEmailFrequency(e.target.value); 
@@ -166,17 +166,17 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
                 <p className="text-sm text-light-gray">Receive desktop notifications when browser is open</p>
               </div>
               <div className="flex items-center">
-                {!browserNotifications && (
+                {/* {!browserNotifications && (
                   <button 
                     onClick={() => {
                       setBrowserNotifications(true);
                       handleChange();
                     }}
-                    className="mr-4 text-sm px-3 py-1 bg-primary-accent rounded-md hover:bg-primary-accent/80 transition-colors"
+                    className="px-3 py-1 mr-4 text-sm transition-colors rounded-md bg-primary-accent hover:bg-primary-accent/80"
                   >
                     Enable
                   </button>
-                )}
+                )} */}
                 <ToggleSwitch 
                   enabled={browserNotifications} 
                   onChange={(val) => { 
@@ -193,17 +193,17 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
                 <p className="text-sm text-light-gray">Receive notifications on your mobile device</p>
               </div>
               <div className="flex items-center">
-                {!mobileNotifications && (
+                {/* {!mobileNotifications && (
                   <button 
                     onClick={() => {
                       setMobileNotifications(true);
                       handleChange();
                     }}
-                    className="mr-4 text-sm px-3 py-1 bg-primary-accent rounded-md hover:bg-primary-accent/80 transition-colors"
+                    className="px-3 py-1 mr-4 text-sm transition-colors rounded-md bg-primary-accent hover:bg-primary-accent/80"
                   >
                     Set Up
                   </button>
-                )}
+                )} */}
                 <ToggleSwitch 
                   enabled={mobileNotifications} 
                   onChange={(val) => { setMobileNotifications(val); handleChange(); }} 
@@ -212,9 +212,9 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
             </div>
             
             {mobileNotifications && (
-              <div className="mt-4 bg-secondary-bg/50 p-4 rounded-lg flex flex-col items-center">
-                <p className="text-sm text-light-gray mb-2">Scan this QR code with your mobile device</p>
-                <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center">
+              <div className="flex flex-col items-center p-4 mt-4 rounded-lg bg-secondary-bg/50">
+                <p className="mb-2 text-sm text-light-gray">Scan this QR code with your mobile device</p>
+                <div className="flex items-center justify-center w-32 h-32 bg-white rounded-lg">
                   {/* Placeholder for QR code */}
                   <span className="text-primary-bg">QR Code</span>
                 </div>
@@ -225,7 +225,7 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ onSettingsChange 
         
         {/* Content Preferences */}
         <section>
-          <h3 className="text-xl font-semibold mb-4 text-primary-accent">Content Preferences</h3>
+          <h3 className="mb-4 text-xl font-semibold text-primary-accent">Content Preferences</h3>
           
           <div className="space-y-4">
             <div>
