@@ -3,7 +3,7 @@ type SettingsSection =
   | 'Profile'
   | 'Notification Preferences'
   | 'Platform Connections'
-  | 'DAO Settings'
+  | 'Proposals'
   | 'AI Training'
   | 'Data & Privacy'
   | 'Help & Support';
@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({
     'Profile',
     'Notification Preferences',
     'Platform Connections',
-    'DAO Settings',
+    'Proposals',
     'AI Training',
     'Data & Privacy',
     'Help & Support'
@@ -33,10 +33,10 @@ const Header: React.FC<HeaderProps> = ({
 
   return (
     <div className="mb-8">
-      <h1 className="text-3xl font-bold text-white mb-2 bg-gradient-to-r from-primary-accent to-secondary-accent bg-clip-text text-transparent">
+      <h1 className="mb-2 text-3xl font-bold text-transparent text-white bg-gradient-to-r from-primary-accent to-secondary-accent bg-clip-text">
         Personalize Your Experience
       </h1>
-      <p className="text-light-gray mb-6">Configure how GovPal works for you</p>
+      <p className="mb-6 text-light-gray">Configure how GovPal works for you</p>
       
       {/* Search bar */}
       <div className="relative mb-6">
@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({
           placeholder="Search settings..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full md:w-96 px-4 py-2 pl-10 bg-cards-bg border border-secondary-bg rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-all duration-300 shadow-glow-sm focus:shadow-glow"
+          className="w-full px-4 py-2 pl-10 transition-all duration-300 border rounded-lg md:w-96 bg-cards-bg border-secondary-bg focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent shadow-glow-sm focus:shadow-glow"
         />
         <svg 
           className="absolute left-3 top-2.5 h-5 w-5 text-light-gray"
@@ -64,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({
       </div>
       
       {/* Tabs navigation - only visible on larger screens */}
-      <div className="hidden md:flex overflow-x-auto space-x-4 pb-2">
+      <div className="hidden pb-2 space-x-4 overflow-x-auto md:flex">
         {tabs.map((tab) => (
           <button
             key={tab}

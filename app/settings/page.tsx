@@ -11,14 +11,15 @@ import HelpSupportPanel from './components/HelpSupportPanel';
 import SaveButton from './components/SaveButton';
 import DataPrivacyPanel from './components/DataPrivacyPanel';
 import PlatformConnectionsPanel from './components/PlatformConnectionPanel';
-import DAOPreferencesPanel from './components/DAOPreferencePanel';
+import GovernanceProposals, { proposals } from './components/ProposalCard';
+// import DAOPreferencesPanel from './components/DAOPreferencePanel';
 
 // Define the available sections
 type SettingsSection = 
   | 'Profile'
   | 'Notification Preferences'
   | 'Platform Connections'
-  | 'DAO Settings'
+  | 'Proposals'
   | 'AI Training'
   | 'Data & Privacy'
   | 'Help & Support';
@@ -59,7 +60,7 @@ const Settings = () => {
       </Head>
 
       {/* Background particles/stars effect */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="particle-container">
           {[...Array(20)].map((_, i) => (
             <div 
@@ -78,7 +79,7 @@ const Settings = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 relative z-10">
+      <div className="container relative z-10 px-4 py-8 mx-auto">
         <Header 
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
@@ -86,7 +87,7 @@ const Settings = () => {
           setActiveSection={setActiveSection}
         />
 
-        <div className="flex flex-col md:flex-row gap-8 mt-8">
+        <div className="flex flex-col gap-8 mt-8 md:flex-row">
           <Sidebar 
             activeSection={activeSection}
             setActiveSection={setActiveSection}
@@ -105,10 +106,10 @@ const Settings = () => {
               <PlatformConnectionsPanel onSettingsChange={handleSettingsChange} />
             )}
             
-            {activeSection === 'DAO Settings' && (
-              <DAOPreferencesPanel onSettingsChange={handleSettingsChange} />
+            {activeSection === 'Proposals' && (
+              <GovernanceProposals proposals={proposals} />
             )}
-            
+             
             {activeSection === 'AI Training' && (
               <AITrainingPanel onSettingsChange={handleSettingsChange} />
             )}

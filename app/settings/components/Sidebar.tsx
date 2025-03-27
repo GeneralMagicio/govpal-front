@@ -3,7 +3,7 @@ type SettingsSection =
   | 'Profile'
   | 'Notification Preferences'
   | 'Platform Connections'
-  | 'DAO Settings'
+  | 'Proposals'
   | 'AI Training'
   | 'Data & Privacy'
   | 'Help & Support';
@@ -21,14 +21,14 @@ const Sidebar: React.FC<SidebarProps> = ({
     'Profile',
     'Notification Preferences',
     'Platform Connections',
-    'DAO Settings',
+    'Proposals',
     'AI Training',
     'Data & Privacy',
     'Help & Support'
   ];
 
   return (
-    <div className="w-full md:w-64 bg-cards-bg rounded-xl p-4 h-fit sticky top-8 transition-all duration-300 hover:shadow-glow-sm">
+    <div className="sticky w-full p-4 transition-all duration-300 md:w-64 bg-cards-bg rounded-xl h-fit top-8 hover:shadow-glow-sm">
       <nav>
         <ul className="space-y-2">
           {sections.map((section) => (
@@ -43,7 +43,7 @@ const Sidebar: React.FC<SidebarProps> = ({
               >
                 {activeSection === section && (
                   <span 
-                    className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-primary-accent rounded-r-full shadow-glow-intense" 
+                    className="absolute left-0 w-1 h-8 -translate-y-1/2 rounded-r-full top-1/2 bg-primary-accent shadow-glow-intense" 
                     style={{ 
                       boxShadow: '0 0 15px rgba(59, 130, 246, 0.7), 0 0 10px rgba(59, 130, 246, 0.5), 0 0 5px rgba(59, 130, 246, 0.3)' 
                     }}
