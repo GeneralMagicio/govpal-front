@@ -116,7 +116,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="mb-4 text-lg font-semibold">ENS GovPal</h3>
+            <h3 className="mb-4 text-lg font-semibold">Arbitrum GovPal</h3>
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.name}>

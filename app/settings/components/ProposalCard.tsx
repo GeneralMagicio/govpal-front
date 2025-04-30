@@ -70,7 +70,7 @@ const GovernanceProposals: React.FC<GovernanceProposalsProps> = ({ proposals }) 
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-xl font-semibold text-white">Governance Proposals</h2>
-            <p className="mt-1 text-sm text-light-gray">Review active proposals that may affect your ENS experience</p>
+            <p className="mt-1 text-sm text-light-gray">Review active proposals that may affect your Arbitrum experience</p>
           </div>
           {/* <a 
             href="/governance" 
@@ -99,23 +99,23 @@ export const proposals: Proposal[] = [
   {
     "title": "[EP 5.28] [Executable] Reimbursement of eth.limo's ongoing legal fees",
     "link": "https://discuss.ens.domains/t/ep-5-28-executable-reimbursement-of-eth-limo-s-ongoing-legal-fees/20004",
-    "summary": "This proposal seeks reimbursement for eth.limo's legal fees incurred while operating ENS gateway services, addressing unexpected legal challenges from maintaining public infrastructure.",
-    "ifItPasses": "ENS DAO will transfer 240,632.38 USDC to cover eth.limo's legal fees, enabling continued operation of their public gateway service without financial strain.",
-    "ifItDoesNotPass": "eth.limo may exhaust its resources, potentially compromising its ability to maintain the public ENS gateway service and support ecosystem integrations."
+    "summary": "This proposal seeks reimbursement for eth.limo's legal fees incurred while operating Arbitrum gateway services, addressing unexpected legal challenges from maintaining public infrastructure.",
+    "ifItPasses": "Arbitrum DAO will transfer 240,632.38 USDC to cover eth.limo's legal fees, enabling continued operation of their public gateway service without financial strain.",
+    "ifItDoesNotPass": "eth.limo may exhaust its resources, potentially compromising its ability to maintain the public Arbitrum gateway service and support ecosystem integrations."
   },
   {
-    "title": "[EP 5.26] [Executable] Implementation of [EP 5.19]'s ENS Governance Distribution Pilot Program",
+    "title": "[EP 5.26] [Executable] Implementation of [EP 5.19]'s Arbitrum Governance Distribution Pilot Program",
     "link": "https://discuss.ens.domains/t/ep-5-26-executable-implementation-of-ep-5-19-s-ens-governance-distribution-pilot-program/19878",
-    "summary": "This proposal executes the approved Governance Distribution Pilot Program, transferring 30,000 ENS tokens to be distributed via quadratic funding to contributors across ecosystem, public goods, metagov, and bounty categories.",
-    "ifItPasses": "30,000 ENS will be distributed to recipients through 2-year vesting contracts, rewarding community contributions according to the quadratic funding formula approved in EP5.19.",
+    "summary": "This proposal executes the approved Governance Distribution Pilot Program, transferring 30,000 Arbitrum tokens to be distributed via quadratic funding to contributors across ecosystem, public goods, metagov, and bounty categories.",
+    "ifItPasses": "30,000 Arbitrum will be distributed to recipients through 2-year vesting contracts, rewarding community contributions according to the quadratic funding formula approved in EP5.19.",
     "ifItDoesNotPass": "The approved governance distribution program will not be implemented, delaying rewards for ecosystem contributors and potentially affecting future participation incentives."
   },
   {
     "title": "[EP 6.1] [Executable] Convert 6,000 ETH to USDC for DAO Operating Expenses",
     "link": "https://discuss.ens.domains/t/ep-6-1-executable-convert-6-000-eth-to-usdc-for-dao-operating-expenses/20138",
-    "summary": "Proposal to convert 6,000 ETH to USDC to replenish depleted reserves, ensuring 12 months of operational runway for ENS DAO expenses including ENS Labs payments and working groups.",
-    "ifItPasses": "6,000 ETH will be converted via TWAP swaps (1,000 ETH immediately and 5,000 ETH over 3 months) to USDC, managed through a new multi-sig Safe with ENS and karpatkey signers.",
-    "ifItDoesNotPass": "ENS DAO will lack sufficient USDC reserves to cover operational expenses, potentially disrupting payments to service providers, working groups, and ENS Labs commitments."
+    "summary": "Proposal to convert 6,000 ETH to USDC to replenish depleted reserves, ensuring 12 months of operational runway for Arbitrum DAO expenses including Arbitrum Labs payments and working groups.",
+    "ifItPasses": "6,000 ETH will be converted via TWAP swaps (1,000 ETH immediately and 5,000 ETH over 3 months) to USDC, managed through a new multi-sig Safe with Arbitrum and karpatkey signers.",
+    "ifItDoesNotPass": "Arbitrum DAO will lack sufficient USDC reserves to cover operational expenses, potentially disrupting payments to service providers, working groups, and Arbitrum Labs commitments."
   },
   {
     "title": "Accountability: [EP 5.29] Funding request for Unruggable",

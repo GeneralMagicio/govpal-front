@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ENS GovPal",
+  title: "Arbitrum GovPal",
   description: "Your one and only governance pal",
 };
 
