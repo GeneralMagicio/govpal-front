@@ -94,7 +94,7 @@ const Settings = () => {
     const query = trimmedInput;
 
     try {
-      const response = await fetch(`http://65.109.203.160:2345/chat/${process.env.NEXT_PUBLIC_TENANT}`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/chat/${process.env.NEXT_PUBLIC_TENANT}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
