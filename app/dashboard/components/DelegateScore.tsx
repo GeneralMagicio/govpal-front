@@ -12,7 +12,7 @@ const DelegateScore: React.FC<{scores: DelegateScoreProps[]}> = ({scores}) => {
 
 
   return (
-    <div className="flex flex-col justify-center h-full p-4 border rounded-lg bg-cards-bg shadow-glow-sm border-arb-border">
+    <div className="flex flex-row justify-around h-full p-4 border rounded-lg bg-cards-bg shadow-glow-sm border-arb-border">
        <h4 className="mb-3 text-sm font-medium text-center uppercase text-light-gray">DIP SCORE</h4>
        <div className="flex items-center justify-center space-x-3">
           {/* Basic Select */}
