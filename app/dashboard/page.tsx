@@ -13,6 +13,7 @@ import ActivityFeed from './components/ActivityFeed';
 // Import Shared Chatbot Component
 import { activityData, forumData, offchainData, onchainData, scoreData } from './mockData';
 import Chatbot from '../settings/components/Chatbox';
+import TaskManager from './components/TaskManager';
 
 
 // --- Define interfaces for type safety ---
@@ -85,6 +86,8 @@ const DashboardPage: React.FC = () => {
 
       {/* Chatbot Feature */}
       <Chatbot />
+
+      <TaskManager />
 
     </div>
   );
