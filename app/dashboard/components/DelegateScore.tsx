@@ -19,7 +19,7 @@ const DelegateScore: React.FC<{scores: DelegateScoreProps[]}> = ({scores}) => {
           <div className="relative">
              <select
                 defaultValue={month} // Set default based on prop
-                className="appearance-none bg-secondary-bg border border-arb-border text-highlights text-sm font-medium rounded-md pl-3 pr-8 py-1.5 focus:outline-none focus:ring-1 focus:ring-primary-accent cursor-pointer"
+                className="appearance-none bg-secondary-bg border border-arb-border text-white text-sm font-medium rounded-md pl-3 pr-8 py-1.5 focus:outline-none focus:ring-1 focus:ring-primary-accent cursor-pointer"
                 aria-label="Select month for DIP Score"
                 onChange={(e) => setMonth(e.target.value)}
              >

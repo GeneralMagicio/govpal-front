@@ -114,7 +114,7 @@ const Chatbot: React.FC = () => {
         <div className="fixed z-40 flex flex-col w-full max-w-md border rounded-lg shadow-xl bottom-20 right-6 bg-cards-bg border-arb-border animate-fadeIn" style={{ height: '70vh', maxHeight: '550px' }}>
           {/* Header */}
           <div className="flex items-center justify-between p-3 border-b border-arb-border">
-            <h3 className="text-lg font-semibold text-highlights">GovPal AI Assistant</h3>
+            <h3 className="text-lg font-semibold text-white">GovPal AI Assistant</h3>
             <button
               onClick={() => setIsChatOpen(false)}
               className="text-light-gray hover:text-white focus:outline-none"
@@ -133,7 +133,7 @@ const Chatbot: React.FC = () => {
                 <div className={`max-w-[85%] px-3 py-2 rounded-lg shadow-sm ${
                   msg.sender === 'user'
                     ? 'bg-primary-accent text-white'
-                    : 'bg-cards-bg text-highlights' // Use highlights for AI text for contrast
+                    : 'bg-cards-bg text-white' // Use highlights for AI text for contrast
                 }`}>
                   <p className="text-sm whitespace-pre-wrap">{msg.text}</p>
                 </div>
@@ -164,7 +164,7 @@ const Chatbot: React.FC = () => {
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask about governance..."
-                className="flex-1 px-3 py-2 text-sm border rounded-lg bg-secondary-bg border-arb-border text-highlights focus:outline-none focus:ring-1 focus:ring-primary-accent focus:border-primary-accent placeholder-light-gray/70"
+                className="flex-1 px-3 py-2 text-sm text-white border rounded-lg bg-secondary-bg border-arb-border focus:outline-none focus:ring-1 focus:ring-primary-accent focus:border-primary-accent placeholder-light-gray/70"
                 disabled={isLoading}
               />
               <button

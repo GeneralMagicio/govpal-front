@@ -32,7 +32,7 @@ const ForumFeedback: React.FC<ForumFeedbackProps> = ({ posts }) => {
             {posts.map((post, index) => (
               <tr key={index} className="align-top cursor-pointer hover:bg-secondary-bg/30">
                 <td className="px-4 py-3">
-                  <p className="mb-1 font-medium text-highlights">{post.title}</p>
+                  <p className="mb-1 font-medium text-white">{post.title}</p>
                   <div className="flex flex-wrap gap-1">
                     {post.tags.map(tag => (
                       <span key={tag} className="text-xs bg-primary-accent/20 text-primary-accent px-1.5 py-0.5 rounded">
@@ -58,7 +58,7 @@ const ForumFeedback: React.FC<ForumFeedbackProps> = ({ posts }) => {
                     <XIcon className="inline-block w-5 h-5 text-alerts" />
                   )}
                 </td>
-                <td className={`px-4 py-3 font-medium text-center ${parseInt(post.ai_score.split('/')[0]) === 0 ? 'text-alerts' : 'text-highlights'}`}>
+                <td className={`px-4 py-3 font-medium text-center ${parseInt(post.ai_score.split('/')[0]) === 0 ? 'text-alerts' : 'text-white'}`}>
                   {post.ai_score}
                 </td>
               </tr>

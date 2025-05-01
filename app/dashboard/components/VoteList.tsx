@@ -41,7 +41,7 @@ const VoteList: React.FC<VoteListProps> = ({ title, votes }) => {
       <div className="flex-grow pr-2 space-y-3 overflow-y-auto scrollbar-thin scrollbar-thumb-arb-border scrollbar-track-secondary-bg">
         {votes.length > 0 ? votes.map((vote, index) => (
           <div key={index} className="p-3 border rounded-md cursor-pointer hover:bg-secondary-bg/30 bg-secondary-bg border-arb-border/50">
-            <p className="mb-1 text-sm font-medium text-highlights">{vote.title}</p>
+            <p className="mb-1 text-sm font-medium text-white">{vote.title}</p>
             <div className="flex flex-wrap mb-2 text-xs gap-x-3 gap-y-1 text-light-gray"> {/* Added flex-wrap */}
               <span>{vote.id_reference}</span>
               <span>by {vote.author_snippet}</span>

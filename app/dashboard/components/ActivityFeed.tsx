@@ -27,7 +27,7 @@ const ActivityFeed: React.FC<ActivityFeedProps> = ({ activities }) => {
           <div key={index} className="p-3 text-sm border rounded-lg shadow-sm cursor-pointer bg-secondary-bg border-arb-border/50"> {/* Slightly enhanced styling */}
              <p> {/* Wrap text for better structure */}
                 <span className="mr-1 text-light-gray/80">{activity.type} /</span>
-                <span className="text-highlights mr-1.5 font-medium">{activity.subject}</span>
+                <span className="text-white mr-1.5 font-medium">{activity.subject}</span>
                 <span className={`font-semibold ${getActionClass(activity.action)}`}>{activity.action}</span>
              </p>
           </div>

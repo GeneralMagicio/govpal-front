@@ -15,7 +15,7 @@ const DelegateIdentification: React.FC<DelegateIdentificationProps> = ({ name, i
         {/* Placeholder text if needed */}
         {/*!imageUrl && <span className="text-2xl font-bold text-primary-accent">{name ? name.charAt(0).toUpperCase() : '?'}</span>*/}
       </div>
-      <h2 className="text-2xl font-bold truncate text-highlights">{name}</h2>
+      <h2 className="text-2xl font-bold truncate text-white">{name}</h2>
     </div>
   );
 };
