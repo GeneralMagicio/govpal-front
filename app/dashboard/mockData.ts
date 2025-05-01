@@ -4,7 +4,7 @@ export const onchainData = {
   data: {
     onchain_votes: [
       {
-        title: "TMC ARB Recommendation",
+        title: "TMC ENS Recommendation",
         id_reference: "#9d13c",
         author_snippet: "0xb4c0...6f13",
         time_remaining: "3 days remaining",
@@ -36,7 +36,7 @@ export const offchainData = {
   data: {
     offchain_votes: [
       {
-        title: "Arbitrum Grants Program (AGP) - Q3 2024 Funding Round",
+        title: "ENS Grants Program (AGP) - Q3 2024 Funding Round",
         id_reference: "#a4f8b", // Example Snapshot ID or Forum Post ref
         author_snippet: "0x7e2a...d9c1", // Plausible delegate or proposer address
         time_remaining: "1 day remaining",
@@ -85,7 +85,7 @@ export const forumData = {
       },
       {
         title:
-          "[Non-constitutional][RFC] ARB Incentives: User Acquisition for dApps & Protocols",
+          "[Non-constitutional][RFC] ENS Incentives: User Acquisition for dApps & Protocols",
         tags: ["#Proposals"],
         engagement_metric_1: null,
         feedback_status: "Complete",
@@ -136,12 +136,12 @@ export const activityData = {
     activity_feed: [
       {
         type: "Offchain vote",
-        subject: "Snapshot Vote: Arbitrum Grants Program - Round 5 Funding",
+        subject: "Snapshot Vote: ENS Grants Program - Round 5 Funding",
         action: "Voted for",
       },
       {
         type: "Onchain vote",
-        subject: "AIP-7: Security Council Election Implementation",
+        subject: "ENSIP-7: Security Council Election Implementation",
         action: "Voted Against",
       },
       {
@@ -151,12 +151,12 @@ export const activityData = {
       },
       {
         type: "Forum activity",
-        subject: "Discussion: Potential ARB Staking Mechanism Enhancements",
+        subject: "Discussion: Potential ENS Staking Mechanism Enhancements",
         action: "Added a comment",
       },
       {
         type: "Forum activity",
-        subject: "[Draft AIP] Framework for Arbitrum Orbit Chain Incentives",
+        subject: "[Draft ENSIP] Framework for ENS Orbit Chain Incentives",
         action: "Created this proposal",
       },
     ],
