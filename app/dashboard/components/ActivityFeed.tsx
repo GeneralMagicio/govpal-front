@@ -24,7 +24,7 @@ const ActivityFeed: React.FC<ActivityFeedProps> = ({ activities }) => {
       <h3 className="mb-4 text-lg font-semibold tracking-wider uppercase text-primary-accent">Activity</h3>
       <div className="flex-grow space-y-2.5 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-arb-border scrollbar-track-secondary-bg">
         {activities.length > 0 ? activities.map((activity, index) => (
-          <div key={index} className="p-3 text-sm border rounded-lg shadow-sm bg-secondary-bg border-arb-border/50"> {/* Slightly enhanced styling */}
+          <div key={index} className="p-3 text-sm border rounded-lg shadow-sm cursor-pointer bg-secondary-bg border-arb-border/50"> {/* Slightly enhanced styling */}
              <p> {/* Wrap text for better structure */}
                 <span className="mr-1 text-light-gray/80">{activity.type} /</span>
                 <span className="text-highlights mr-1.5 font-medium">{activity.subject}</span>

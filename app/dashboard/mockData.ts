@@ -36,28 +36,28 @@ export const offchainData = {
   data: {
     offchain_votes: [
       {
-        title: "TMC ARB Recommendation",
-        id_reference: "#9d13c",
-        author_snippet: "0xb4c0...6f13",
-        time_remaining: "3 days remaining",
-        vote_status: null,
+        title: "Arbitrum Grants Program (AGP) - Q3 2024 Funding Round",
+        id_reference: "#a4f8b", // Example Snapshot ID or Forum Post ref
+        author_snippet: "0x7e2a...d9c1", // Plausible delegate or proposer address
+        time_remaining: "1 day remaining",
+        vote_status: null, // User hasn't voted yet
         reason_status: "Reason pending",
       },
       {
-        title: "TMC Stablecoin Recommendation",
-        id_reference: "#dd38e",
-        author_snippet: "0xb4c0...6f13",
-        time_remaining: "3 days remaining",
-        vote_status: "Voted against",
-        reason_status: "Reason pending",
+        title: "Temperature Check: Prioritize Stylus Integration Support for Devs",
+        id_reference: "#e0c55",
+        author_snippet: "0x3b9f...a01e",
+        time_remaining: "5 days remaining",
+        vote_status: "Voted against", // User voted against this proposal
+        reason_status: "Reason provided", // User left a comment/reason
       },
       {
-        title: "OpCo - Oversight and Transparency Committee (OAT) Elections",
-        id_reference: "#b4228",
-        author_snippet: "0xb4c0...6f13",
-        time_remaining: "3 days remaining",
-        vote_status: "Voted for",
-        reason_status: "Reason provided",
+        title: "Proposal: Diversify Portion of Treasury into USDC & USDT (Phase 1)",
+        id_reference: "#f1a90",
+        author_snippet: "0xd55c...b877", // Could be a Treasury working group address
+        time_remaining: "Closed 2 days ago", // Voting period has ended
+        vote_status: "Voted for", // User voted for this proposal
+        reason_status: "Reason pending", // User voted but didn't add a reason
       },
     ],
   },
